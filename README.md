@@ -1,3 +1,1 @@
-*Start at main.html*
-
-Portfolio-style website showcasing past projects
+Web Development tasks done during an internship with DEP
