@@ -1,0 +1,36 @@
+<div class="heading">
+    <h1>Welcome to DynaBlog</h1>
+    <p>Have something to say?</p>
+   
+</div>
+
+<!-- IMAGE HERE -->
+ <img src="/img/homeimg.jpg" alt="Lady in pink dress working on laptop" width="801" height="528" >
+
+<section class="articles">
+    <h2>Latest Posts</h2>
+
+    <ul class="article-ul">
+
+        <% data.forEach(post => { %>    <!--for loop-->
+
+        <li>
+            <a href="/post/<%= post._id %>">
+                <span>
+                    <%= post.title %>
+                </span>
+                <span class="art-date">
+                    <%= post.CreatedAt.toDateString() %>
+                </span>
+            </a>
+        </li>
+
+        <% }) %>
+       
+    </ul>    
+
+  
+
+</section>
+
+
