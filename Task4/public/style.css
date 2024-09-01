@@ -1,0 +1,137 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: rgb(114, 172, 219);
+}
+
+.title {
+  margin: 20px 0;
+}
+
+.main {
+  border: 8px solid rgb(12, 36, 56);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.name {
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: bl;
+  background-color: rgb(53, 98, 165);
+}
+
+.name > span {
+  color: rgb(12, 36, 56);
+}
+
+.nameinput {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(12, 36, 56);
+  flex-grow: 1;
+  border: none;
+  margin: 0px 12px;
+  outline: none;
+  background-color: rgb(53, 98, 165)
+}
+
+.messagecontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(162, 208, 247);
+  width: 400px;
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.messageleft,
+.messageright {
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.messageleft {
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: rgb(114, 172, 219);
+  box-shadow: -2px 2px 4px rgb(12, 36, 56);
+}
+
+.messageright {
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color: rgb(12, 36, 56);
+  box-shadow: 2px 2px 4px rgb(6, 18, 29);
+  color: #f6f6f6;
+}
+
+.messageleft > p > span,
+.messageright > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 14px;
+  padding: 0px 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.msgform {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.messageinput {
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: rgb(188, 224, 255);
+}
+
+.sendbutton {
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+  background-color: rgb(188, 224, 255);
+  cursor: pointer;
+}
+
+.v-divider {
+  height: 48px;
+  width: 2px;
+  background-color: rgb(53, 98, 165);
+}
+
+.cltotal {
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(6, 18, 29);
+}
